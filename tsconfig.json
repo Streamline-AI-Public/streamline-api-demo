@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node24/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/",
+    "removeComments": true,
+    "strict": true
+  },
+  "include": ["src/**/*"]
+}

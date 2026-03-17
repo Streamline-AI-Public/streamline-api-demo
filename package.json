@@ -1,0 +1,34 @@
+{
+  "name": "streamline-api-demo",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^24.0.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "format": "prettier -w 'src/**/*.ts'",
+    "start-proxy-server": "tsx src/proxy-server.ts",
+    "start-webhook-server": "tsx src/webhook-server.ts",
+    "create-request": "tsx src/create-request.ts",
+    "update-request": "tsx src/update-request.ts",
+    "add-attachments-to-request-with-files": "tsx src/add-attachments-to-request-with-files.ts",
+    "add-attachments-to-request-without-files": "tsx src/add-attachments-to-request-without-files.ts",
+    "query-requests": "tsx src/query-requests.ts"
+  },
+  "dependencies": {
+    "@types/node": "24",
+    "express": "^5.1.0",
+    "http-message-sig": "^0.1.0",
+    "http-proxy-3": "^1.22.0",
+    "structured-headers": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
+    "@types/express": "^5.0.3",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

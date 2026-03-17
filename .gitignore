@@ -1,0 +1,16 @@
+# Environment variables — never commit credentials
+.env
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# macOS metadata
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+.claude/
