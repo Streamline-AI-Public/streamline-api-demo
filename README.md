@@ -27,8 +27,6 @@ This repository contains example TypeScript code demonstrating how to integrate 
     - `WEBHOOK_PUBLIC_KEY` — your webhook signing public key
     - `API_URL` — your Streamline instance URL (e.g. `https://yourcompany.streamline.ai`)
 
-> **Security:** Never commit your `.env` file. It contains private keys. The `.gitignore` in this repo excludes it automatically.
-
 ## Webhook Setup
 
 `webhook-server.ts` must be reachable from the internet to receive webhook events from Streamline. For local development, use a tunneling tool such as [ngrok](https://ngrok.com/) or [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) to expose your local server.
